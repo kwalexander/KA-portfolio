@@ -93,14 +93,6 @@ header nav ul li a {
     flex-grow: 2;
 }
 
-.about-me-h2 {
-    flex: 4;
-}
-
-.about-me-text {
-    flex: 12;
-}
-
 .about-me {
     background-color: #EDEDF5;
 }
@@ -112,10 +104,20 @@ header nav ul li a {
     text-align: right;
     margin: 20px;
     padding: 0 10px 0 0;
+    height: 80%;
 }
 
 .section-border{
-    border-color: 485773;
+    border-color: #485773;
+    height: 50%;
+}
+
+.section-left {
+    flex: 4;
+}
+
+.section-right {
+    flex: 12;
 }
 
 .about-me p {
@@ -140,12 +142,25 @@ header nav ul li a {
 }
 
 .project {
-    margin: 20px;
-    flex: 2;
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    color: #32343D;
+}
+
+.project-main-img {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    object-fit: cover;
 }
 
 .project img {
     width: 100%;
+    height: 200px;
+    position: relative;
+    object-fit: cover;
 }
 
 .project-title {
