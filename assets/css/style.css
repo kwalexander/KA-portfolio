@@ -105,6 +105,7 @@ header nav ul li a {
     margin: 20px;
     padding: 0 10px 0 0;
     height: 80%;
+    font-weight: lighter;
 }
 
 .section-border{
@@ -113,11 +114,11 @@ header nav ul li a {
 }
 
 .section-left {
-    flex: 4;
+    flex-basis: 22%;
 }
 
 .section-right {
-    flex: 12;
+    flex-basis: 76%;
 }
 
 .about-me p {
@@ -133,10 +134,15 @@ header nav ul li a {
 
 
 /* Projects styles start */
+.section-left-h2 {
+    height: 95%;
+}
+
 .projects {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 
 .project {
@@ -155,24 +161,50 @@ header nav ul li a {
 }
 
 .project-highlight img {
-    width: 95%;
+    width: 97%;
     margin-left: auto;
     margin-right: auto;
+    border: 5px solid #9FCACC;
+    height: 300px;
+    object-fit: cover;
+}
+
+.project-highlight-text {
+    position: relative;
+    bottom: 75px;
+    z-index: 9999;
+    left: 0px;
+    display: inline-block;
+    background-color: #9FCACC;
+    padding: 5px;
 }
 
 .project img {
     width: 100%;
-    height: 200px;
+    height: 150px;
     position: relative;
     object-fit: cover;
+    border: 5px solid #9FCACC
+}
+
+.project-text {
+    position: relative;
+    bottom: 75px;
+    z-index: 9999;
+    left: -60px;
+    display: inline-block;
+    background-color: #9FCACC;
+    padding: 5px;
 }
 
 .project-title {
-    font-size: 14px;
+    font-size: 18px;
+    text-align: left;
 }
 
 .project-tools {
-    font-size: 12px;
+    font-size: 14px;
+    text-align: left;
 }
 
 /* Footer styles start */
