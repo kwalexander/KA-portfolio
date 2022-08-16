@@ -16,6 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     position: sticky;
+    flex-wrap: wrap;
     top: 0;
     z-index: 9999;
 }
@@ -158,6 +159,7 @@ header nav ul li a {
 .project-highlight {
     flex: 3 1 auto;
     width: 100%;
+    text-decoration: none;
 }
 
 .project-highlight img {
@@ -200,11 +202,13 @@ header nav ul li a {
 .project-title {
     font-size: 18px;
     text-align: left;
+    color: #32343D;
 }
 
 .project-tools {
     font-size: 14px;
     text-align: left;
+    color: #32343D;
 }
 
 /* Footer styles start */
@@ -229,3 +233,96 @@ footer ul li a {
     border-bottom: #485773;
     border-bottom: solid;
 }
+
+
+/* Media queries for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 5px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+
+    .section-title {
+      width: 80%;
+    }
+    }
+
+
+    /* Media query for tablets and smaller */
+@media screen  and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+
+    .flex-row {
+        flex-wrap: wrap;
+    }
+  
+    .section-left {
+      width: 100%;
+      flex-basis: auto;
+    }
+
+    .section-right {
+        width: 100%;
+        flex-basis: auto;
+    }
+  
+    .section-title {
+        width: 100%;
+        text-align: right;
+    }
+    }
+  
+
+  /* Media query for mobile phones and smaller */
+  @media screen and (max-width: 575px) {
+    
+    header nav ul li a {
+        font-size: 12px;
+      }
+
+    .section-title {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      font-size: 24;
+      border-right: 0;
+    }
+
+    footer ul {
+        margin-top: 5px;
+        justify-content: center;
+      }
+    
+      footer ul li {
+        text-align: center;
+      }
+      
+      footer ul li a {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
